@@ -5,7 +5,11 @@ status: final
 
 # Kremser Anästhesieskriptum
 
+![](Bilder/gen/Facharztdiplom-Aufstieg-1-quer.001341px-lq.jpeg)
+
 ::::{only} html
+
+
 :::{admonition} Download
 
 -   {{linkpdfa4}}
