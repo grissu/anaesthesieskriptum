@@ -6,6 +6,11 @@ vormals: "Anästhesie kompakt" von Anita Aust\
 Homepage: https://anaesthesieskriptum.at
 
 
+![](Text/Bilder/gen/Facharztdiplom-Aufstieg-1-quer.001341px.jpeg)
+
+
+
+
 
 ## Herausgeber
 
