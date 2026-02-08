@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"editor.insertSpaces": true,
+		"editor.tabSize": 4,
+		"editor.detectIndentation": false,
+		"editor.wordWrap": "bounded",
+		"esbonio.sphinx.confDir": "./Text",
+		"files.trimTrailingWhitespace": true,
+		"myst.preview.extensions": [
+			"dollarmath",
+			"colon_fence",
+			"deflist",
+			"amsmath",
+			"tasklist"
+		],
+		"myst.preview.enable": true,
+	}
+}
