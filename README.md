@@ -1,8 +1,21 @@
 # Kremser Anästhesieskriptum -- KrAS
 
-vormals: "Anästhesie kompakt" von Anita Aust
-
+vormals: "Anästhesie kompakt" von Anita Aust\
 Übernommen von Sebastian Gabriel
+
+Homepage: https://anaesthesieskriptum.at
+
+
+
+## Herausgeber
+
+Sebastian Gabriel \
+c/o RA Matutis \
+Fürstenstraße 5, 5400 Hallein
+
+
+
+
 
 ## Hinweise zur Einreichung von Beiträgen
 
