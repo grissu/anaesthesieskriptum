@@ -342,6 +342,21 @@ Dieser Abschnitt ist in Arbeit!
 \minitoc
 :::
 ''',
+    'Text_wie_kann_ich_beitragen': r'''
+:::{admonition} Wie kann ich beitragen?
+:class: hint
+
+Das Melden von Fehlern oder Einsendung von Beiträgen kann über
+-   unsere E-Mail-Adresse input@anaesthesieskriptum.at geschehen, oder über
+-   das Ticketsystem auf unserem [Github™-Repository](https://github.com/grissu/anaesthesieskriptum/issues) (Github™-Konto erforderlich).
+
+    Von der Webseite kann man auch mittels des Github™-Symbols in der rechten oberen Ecke direkt ein Ticket erstellen:
+
+    ![alt text](/Bilder/Screenshot_open-issue-Detail.png)
+
+Bitte beachten Sie {numref}`Hinweise-zur-Einreichung`: "{ref}`Hinweise-zur-Einreichung`".
+:::
+'''
 }
 
 # myst_linkify_fuzzy_links = False

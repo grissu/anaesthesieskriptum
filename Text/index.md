@@ -13,6 +13,8 @@ status: final
 :::
 ::::
 
+{{ Text_wie_kann_ich_beitragen }}
+
 :::{toctree}
 :maxdepth: 2
 :numbered: 3
