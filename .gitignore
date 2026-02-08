@@ -1,0 +1,16 @@
+*~
+.GitAutoCommitTrue
+.GitAutoPushTrue
+build/*
+_build
+*/_build
+*#*
+.#*
+/Quelltext/_extensions/__pycache__
+*/__pycache__/*
+*.sav
+*.bak
+*.tmp.md
+Import/
+Export/
+*.pyc
