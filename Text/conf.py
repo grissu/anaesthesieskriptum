@@ -401,8 +401,8 @@ md_prolog = """
 announcement                = "<strong><font color=\"FF0000\">&#128679; ACHTUNG!</font></strong> Dies ist eine <strong><font color=\"FF0000\"> VORABVERSION</font></strong> (v" + version + ") &#9888;"
 html_title                  = u"Sebastian Gabriel"
 html_short_title            = u'Sebastian Gabriel'
-html_logo                   = './Bilder/Logos/AINS-KrAS_v006.svg'
-html_favicon                = './Bilder/Logos/AINS-KrAS_v006.svg'
+html_logo                   = './Bilder/Logos/AINS-KrAS_v006-solarized.svg'
+html_favicon                = './Bilder/Logos/AINS-KrAS_v006-solarized.svg'
 html_show_sourcelink        = True
 html_theme_path             = ["../System/themes", ]
 html_static_path            = ['../System/static']
@@ -410,7 +410,7 @@ html_theme                  = "sphinx_book_theme"
 html_css_files              = [
                                 "pst-definitions.css",
                                 "pst-customization.css",
-                                "pst-settings.css",
+                                "pst-settings-solarized.css",
                                 "lexend/lexend.css",
                               ]
 
@@ -459,6 +459,7 @@ latex_engine                      = 'lualatex'
 
 latex_additional_files            = [
     'Bilder/Logos/AINS-KrAS_v006.pdf',
+    'Bilder/Logos/AINS-KrAS_v006-solarized.pdf',
     'hyphenation.inc',
     "../Submodules/hex15-sphinx-extensions-contrib/lua-ul.sty",
     "../Submodules/hex15-latex-styles/hex15-colors.sty",
@@ -487,7 +488,8 @@ latex_elements                    = {
         \RequirePackage{newunicodechar}
         \usepackage{hex15-sphinx}
         \usepackage{hex15-fontsubst-lexend}
-        \usepackage{hex15-theme-ccca}
+        %\usepackage{hex15-theme-ccca}
+        \usepackage{hex15-theme-solarized}
         \usepackage{icomma} % comma as decimal separator
 
 
@@ -615,7 +617,7 @@ latex_elements                    = {
                                                       {v\Release} % 5: Version
                                                       {\Release} % 6: Release
                                                       {
-                                                          \includegraphics[width=11cm]{AINS-KrAS_v006.pdf}
+                                                          \includegraphics[width=11cm]{AINS-KrAS_v006-solarized.pdf}
 
                                                           \vfill
 
@@ -689,7 +691,7 @@ if pdf_page_format == 'letter':
                                                       {v\Release} % 5: Version
                                                       {\Release} % 6: Release
                                                       {
-                                                          \includegraphics[width=11cm]{AINS-KrAS_v006.pdf}
+                                                          \includegraphics[width=11cm]{AINS-KrAS_v006-solarized.pdf}
 
                                                           \vfill
 
