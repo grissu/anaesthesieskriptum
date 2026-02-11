@@ -214,7 +214,11 @@ html[data-theme=light]{
   --pst-color-white-highlight:#d9d9d9;
   --sd-color-white:var(--pst-color-white);
   --sd-color-white-text:var(--pst-color-white-text);
-  --sd-color-white-highlight:var(--pst-color-white-highlight)
+  --sd-color-white-highlight:var(--pst-color-white-highlight);
+
+      body {
+    font-weight: 400;
+  }
 }
 
 html[data-theme=dark]{
