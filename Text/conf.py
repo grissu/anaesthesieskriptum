@@ -410,7 +410,7 @@ html_theme                  = "sphinx_book_theme"
 html_css_files              = [
                                 "pst-definitions.css",
                                 "pst-customization.css",
-                                "pst-settings-solarized.css",
+                                "pst-settings.css",
                                 "lexend/lexend.css",
                               ]
 

@@ -132,6 +132,7 @@ html:not([data-theme]){
 
 html[data-theme=light]{
   --pst-heading-color:        var(--Solarized-Custom-1);
+  --sbt-color-announcement:   var(--Solarized-Custom-1);
   --pst-color-attention:      var(--Solarized-Orange);
   --pst-color-text-base:      var(--Solarized-Text-light);
   --pst-color-text-muted:     var(--Solarized-Base0);
@@ -311,6 +312,10 @@ html[data-theme=dark]{
 
   body {
     font-weight: 400;
+  }
+
+  .admonition-title {
+    color: #ffffff;
   }
 }
 
