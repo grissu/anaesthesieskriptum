@@ -313,6 +313,10 @@ html[data-theme=dark]{
   body {
     font-weight: 400;
   }
+
+  .admonition-title {
+    color: #ffffff;
+  }
 }
 
 html[data-theme=dark],html[data-theme=light]{
