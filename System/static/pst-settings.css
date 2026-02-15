@@ -310,6 +310,7 @@ html[data-theme=dark]{
   --pst-color-danger-bg:        var(--Solarized-Base2);
   --pst-color-error-bg:         var(--Solarized-Base2);
   --pst-color-warning-bg:       var(--Solarized-Base2);
+  --pst-color-success-bg:       var(--Solarized-Base2);
   --pst-color-tip-bg:           var(--Solarized-Base2);
 
     body {
