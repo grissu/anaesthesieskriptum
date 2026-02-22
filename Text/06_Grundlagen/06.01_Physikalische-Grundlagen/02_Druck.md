@@ -1,5 +1,5 @@
 ---
-status: sprint
+status: final
 ---
 
 
@@ -56,7 +56,7 @@ p=\frac{F}{A}
 
 ## Drücke in Flüssigkeiten
 
-Der Druck in strömenden Medien besteht aus einem statischen und einem dynamischen Anteil. Beide Teile sind von der Dichte abhängig. Sie unterscheiden sich dadurch, dass der statische Druck (bei konstanter Dichte) *linear* mit der Höhe $h$ der Flüssigkeitssäule steigt und von der (Erd-)beschleunigung $g$ abhängig ist. Der dynamische Anteil wächst dagegen *quadratisch* mit der Strömungsgeschwindigkeit des Fluids.
+Der Druck in strömenden Medien besteht aus einem statischen und einem dynamischen Anteil. Beide Teile sind von der Dichte abhängig. Sie unterscheiden sich dadurch, dass der statische Druck (bei konstanter Dichte) *linear* mit der Höhe $h$ der Flüssigkeitssäule steigt und von der (Erd-)Beschleunigung $g$ abhängig ist. Der dynamische Anteil wächst dagegen *quadratisch* mit der Strömungsgeschwindigkeit des Fluids.
 
 
 
@@ -154,7 +154,7 @@ Je höher die Geschwindigkeit, desto größer der hydrodynamische Druck.
 
 
 :::{attention}
-Der hydrodynamische Druck $p_\text{dyn}$ wächst **quadratisch** mit der Flußgeschwindigkeit.
+Der hydrodynamische Druck $p_\text{dyn}$ wächst **quadratisch** mit der Flussgeschwindigkeit.
 :::
 
 
