@@ -30,7 +30,7 @@ Die SI-Einheit ist **Pascal** (**Pa**), 1 Pascal (Pa) ist definiert als *1 N�
 
 Mathematisch wird Druck als Kraft pro Fläche beschrieben:
 
-:::{math} Druck
+:::{math}
 :name: EQ-Druck
 
 p=\frac{F}{A}
