@@ -64,7 +64,7 @@ Die abgeführten Gase werden durch eine zentrale Absauganlage in ein sicheres En
 
 
 
-:::{index} single: Frischagsentkoppelung
+:::{index} single: Frischgasentkoppelung
 :::
 
 ## Frischgasentkoppelung
@@ -78,7 +78,7 @@ Die abgeführten Gase werden durch eine zentrale Absauganlage in ein sicheres En
     Über die Gaseinlassventile werden die Gase AIRS/O₂ bzw. N2O/O₂ in den Mischtank geleitet.
     Die Ventile werden zeitgesteuert nacheinander geöffnet und geschlossen.
     Flow und Druck der einströmenden Gase werden überwacht, sodass der Mischer unabhängig von Versorgungsdrücken ist.
-    Der Gesamt-Frischgasflow wird mit Hilfe eines *Proportionalventils* (Flowdosierventil) gesteuert und **nur in der Exspirationsphase** in das Kreisystem geleitet.
+    Der Gesamt-Frischgasflow wird mit Hilfe eines *Proportionalventils* (Flowdosierventil) gesteuert und **nur in der Exspirationsphase** in das Kreissystem geleitet.
 
 
 
@@ -135,15 +135,15 @@ Na₂CO₃ + Ca(OH)₂ ⇌ CaC=3 + 2 NaOH
 :::
 
 :::{important}
--   Wassergehaölt (5%) muss erhalten bleiben
--   Ablaufdatum wegen Austrockung beachten!
+-   Wassergehalt (5%) muss erhalten bleiben
+-   Ablaufdatum wegen Austrocknung beachten!
 -   Keine Trocknung, Sterilisation oder Desinfektion
 -   Problem bei Kindern:
     zu wenig CO₂-Abgabe, damit zu wenig Befeuchtung und Erwärmung des Gas → bei langer OP externe Geräte empfohlen!
 :::
 
--   Widerbefüllbar vs. Einmalprodukt
--   Pillenkalk ansattt von Bruchkalk
+-   Wiederbefüllbar vs. Einmalprodukt
+-   Pillenkalk anstatt von Bruchkalk
 
 
 Wann Atemkalk wechseln?
