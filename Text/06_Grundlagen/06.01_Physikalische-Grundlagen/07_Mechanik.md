@@ -88,7 +88,7 @@ Bilderserie: Hebel
 
 ![Hebel in technischer Beschreibung \[ℓ PD\]](../../../Submodules/3134-medical-picture-collection/resized/PD/Hebel3.001341px.png)
 
-![Das 20-fache Gewicht wird bei 20-fachem Hebelarm im Gleichgewicht gehalten \[₢ Wikimedia Commons, User "CR", ℓ CC-BY-SA 3.0\]](../../../Submodules/3134-medical-picture-collection/resized/CC-BY-SA-3.0/Palanca-ejemplo.001341px.jpg)
+![Das 20-fache Gewicht wird bei 20-fachem Hebelarm im Gleichgewicht gehalten \[₢ Wikimedia Commons, User "CR", ℓ CC BY-SA 3.0\]](../../../Submodules/3134-medical-picture-collection/resized/CC-BY-SA-3.0/Palanca-ejemplo.001341px.jpg)
 :::
 
 
