@@ -42,6 +42,17 @@ Geschlossene Kreissysteme
 
 
 
+## Funktionskomponenten
+
+-   Frischgasanschluss
+-   Überschussventil
+-   Richtungsventile
+-   CO₂-Absorber
+-   Reservoirbeutel
+
+
+
+
 ## Narkosegasabsaugung
 
 Eine Narkosegasabsaugung (Anästhesiegasabsaugung; engl.: Scavenger system) entfernt überschüssiges Narkosegas aus dem Atemsystem und leitet dieses ab, ohne dass es in die Raumluft entweicht.
@@ -102,13 +113,16 @@ Die abgeführten Gase werden durch eine zentrale Absauganlage in ein sicheres En
 ## Atemkalk
 
 
-Pillenkalk (NaOH, Ba(OH)₂), bindet CO₂, wärmt und befeuchtet Gas, Ablaufdatum wegen Austrockung beachten!
+... *bindet* CO₂ (chemische Bindung, kein Filter!), wärmt und befeuchtet Gas,
 
+2 Typen mit unterschiedlichen *Katalysatoren*:
+-   Soda-lime: *NaOH*
+-   Baralyme: *Ba(OH)₂*
 
 Atemkalk dient in Kreissystemen der Elimination von CO₂ durch Bindung des in der Ausatemluft enthaltenem Kohlenstoffdioxid.
 In der Medizin und beim Tauchen wird eine Mischung aus **Calciumhydroxid** Ca(OH)₂ und **Natriumhydroxid** NaOH verwendet, früher auch *Kaliumhydroxid* KOH und *Bariumhydroxid* Ba(OH)₂.
 Atemkalk zur chemischen Bindung von Kohlenstoffdioxid wurde 1924 von Ralf Waters eingeführt. 100 g Natriumhydroxid können bis zu 23 Liter Kohlenstoffdioxid binden. Durchschnittliche Absorber können 10—15 Liter pro 100 g absorbieren.
-Dem Atemkalk ist ein pH-Indikator beigemischt, der bei niedrigem pH-Wert seine Farbe von weiß nach violett ändert und damit (unzuverlässig) anzeigt, dass der Absorber verbraucht ist.
+Dem Atemkalk ist ein pH-Indikator beigemischt (Ethylviolett), der bei niedrigem pH-Wert seine Farbe von weiß nach violett ändert und damit (unzuverlässig) anzeigt, dass der Absorber verbraucht ist.
 
 
 :::{admonition} Reaktionsgleichungen: Atemkalk
@@ -120,8 +134,21 @@ H₂CO₃ + 2 NaOH ⇌ Na₂CO₃ + 2 H₂O
 Na₂CO₃ + Ca(OH)₂ ⇌ CaC=3 + 2 NaOH
 :::
 
-(Problem bei Kindern zu wenig CO₂-Abgabe, damit zu wenig Befeuchtung und Erwärmung des Gas = bei langer OP externe Geräte empfohlen!)
+:::{important}
+-   Wassergehaölt (5%) muss erhalten bleiben
+-   Ablaufdatum wegen Austrockung beachten!
+-   Keine Trocknung, Sterilisation oder Desinfektion
+-   Problem bei Kindern:
+    zu wenig CO₂-Abgabe, damit zu wenig Befeuchtung und Erwärmung des Gas → bei langer OP externe Geräte empfohlen!
+:::
 
+-   Widerbefüllbar vs. Einmalprodukt
+-   Pillenkalk ansattt von Bruchkalk
+
+
+Wann Atemkalk wechseln?
+:   -   Beachte FiCO₂!
+    -   Wenn FiCO₂ > 3 mm Hg (bzw. in der Praxis > 5 mm Hg)
 
 
 
@@ -139,13 +166,13 @@ Wandversorgung
 Flaschenversorgung
 :   Druckminderer, Drucküberwachung mit Manometer
 
-Anschlußschlauch
+Anschlussschlauch
 :   Farbcodiert
 
 Geräteseitig
-:   -   NIST-Anschluß:
+:   -   NIST-Anschluss:
         Dichtigkeit ist *ohne Kraftanstrengung* gewährleistet
-    -   DIN-Anschluß:
+    -   DIN-Anschluss:
         Dichtigkeit ist nur *mit* Kraftanstrengung gewährleistet
 
 
@@ -192,26 +219,30 @@ Geräteseitig
 1.  Pneumatisch mit Flowmeter:
     *Sintermetallfilter* (max. 0,1 mm) reduzieren den Gasdruck vom Versorgungsdruck (ca. 5 bar) auf. ca 1,5 bar vor den Regelventilen.
     Rotameter müssen im Betrieb rotieren, nur dann stimmt die Skalierung mit dem Durchfluss überein.
-2.  Elektronisch
 
--   Der Gesamtfrischgasdurchfluss kann zwischen 0,2—18 L / min betragen.
--   ORC-Funktion (Oxygen Ratio Controller) in Gasmischungen mit Lachgas
-
-    -   Pneumatisch:
+    -   ORC-Funktion (Oxygen Ratio Controller):
         Der Fließdruck nach dem O₂-Regelventil regelt den Lachgasfluss derart, dass mindestens 25% O₂-Konzentration im Frischgas ins Kreissystem gelangen (Proportionalventil)
-    -   Elektronisch:
-        Einfach Einstellung des Frischgasflows bei Beibehaltung der voreingestellten O₂-Konzentration von 25% bis zu einem Frischgasflow von 1 L / min.
-        Wird der Frisschgasflow weiter reduziert ist ein Mindestfluss von 250 mL / min O₂ garantiert.
+2.  Elektronisch
+    -   ORC-Funktion (Oxygen Ratio Controller) in Gasmischungen mit Lachgas
+    -   Einfache Einstellung des Frischgasflows bei Beibehaltung der voreingestellten O₂-Konzentration von 25% bis zu einem Frischgasflow von 1 L / min.
+        Wird der Frischgasflow weiter reduziert ist ein Mindestfluss von 250 mL / min O₂ garantiert.
         Ab 250 mL / min beträgt die O₂-Konzentration 100%.
         Der minimale Frischgasflow beträgt 200 mL / min.
 
--   Manuelle O₂-Notdosierung, vorbereitet für inspiratorische O₂-Regelung, automatische Flowsteuerung
--   Externer Frischgasausgang mit Druckmessung
+    -   Manuelle O₂-Notdosierung, vorbereitet für inspiratorische O₂-Regelung, automatische Flowsteuerung
 
-    Vor dem Frischgasventil befindet sich sich ein Mischgasreservoir mit 0,5 L.
-    Davor und nach dem Frischgasventil findet eine Flow- und Druckmessung statt.
+    -   Gesamtfrischgasdurchfluss 0,2—18 L / min
+
+    -   Externer Frischgasausgang mit Druckmessung
+
+        Vor dem Frischgasventil befindet sich sich ein Mischgasreservoir mit 0,5 L.
+        Davor und nach dem Frischgasventil findet eine Flow- und Druckmessung statt.
 
 
+
+
+Frischgasentkopplung
+:   Frischgas wird während der Inspiration in Reservoir gespeichert und erst in der Exspirationsphase in das System eingeleitet → Frischgas besser ausgenutzt, wird nicht während Exspiration verworfen
 
 
 
@@ -241,6 +272,16 @@ Eine Narkosemaschine muss über folgende Sicherheitsfeatures verfügen:
 Inhalationsanästhetika benötigen aufgrund ihrer verschiedenen physikalischen Eigenschaften spezielle Geräte zur Verdunstung/Verdampfung.
 Die jeweiligen Geräte sind *substanzspezifisch*.
 
+Sicherheitsfeatures
+:   1.  Narkosemittelflasche mit Index-Kragen
+    2.  Kodierter Fülladapter
+    3.  Vapor mit Sicherheitsfüllvorrichtung
+    4.  Maschine:
+        -   Messung der Konzentration
+        -   Gemischerkennung
+        -   Gemischmessung
+        -   MAC-Berechnung
+        -   Alarmierung
 
 
 
@@ -300,10 +341,17 @@ Nachfüllen eines GE-Sevofluran-Vapors.
 
 ### DIVA™: Direct Injection of Volatile Anaesthetics
 
--   Kontrolle der expiratorischen Anästhesiemittel-Konzentration
+-   Kontrolle der exspiratorischen Anästhesiemittel-Konzentration
 -   Minimaler Verbrauch
--   Schnelles Ein- und Auswachen
+-   Schnelles Ein- und Aufwachen
 -   Verbrauchskalkulation
 -   Anzeige des Füllstandes
 -   Befüllung während Betrieb möglich
 
+## Vorgeschriebenes Monitoring gem. EN 740
+
+-   Atemwegsdruckmessung (Diskonnektionslarm, Stenosealarm)
+-   Exspiratorische Volumenmessung
+-   Inspiratorische O₂-Konzentrationsmessung (oberer und unterer Grenzwertalarm)
+-   Kapnographie
+-   Konzentrationsmessung volatiler Anästhetika (oberer und unterer Grenzwertalarm)
