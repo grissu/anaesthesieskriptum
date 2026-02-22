@@ -12,7 +12,7 @@ status: sprint
 # Temperatur
 
 Temperatur ist eine grundlegende physikalische Größe, die den thermischen Zustand eines Systems beschreibt.
-Sie steht in direktem Zusammenhang mit der mittleren kinetischen Energie der Teilchen in einem Stoff.
+Sie steht in direktem Zusammenhang mit der *mittleren kinetischen Energie der Teilchen* in einem Stoff.
 Die SI-Einheit ist **Kelvin** (**K**), der **absoluter Nullpunkt** (0K) beträgt **273,15** °C.
 Die Temperatur beeinflusst zahlreiche physikalische Prozesse und ist eine zentrale Größe in der Thermodynamik.
 

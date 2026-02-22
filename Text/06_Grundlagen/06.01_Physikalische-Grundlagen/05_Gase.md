@@ -15,12 +15,7 @@ Der Schnittpunkt der drei Phasen wird *Trippelpunkt* genannt, für Wasser liegt 
 
 ## Gasgesetze
 
-Drei Variablen:
-
-- Volumen $V$,
-- Temperatur $T$,
-- Druck $p$
-
+Gasgesetze stellen zwischen Druck $p$, Volumen $V$, Temperatur $T$ und Stoffmenge $n$ (Masse $m$  bzw. Teilchenzahl $N$) eine Beziehung her.
 Es gilt:
 
 $$
@@ -33,31 +28,42 @@ $$
 
 
 
-:::{index} single: R; Gaskonstante
+
+
+
+:::{index} single: Gase; ideale
 :::
-:::{index} single: Gaskonstante
+:::{index} single: Gase; reale
 :::
-:::{index} single: Zustandsgleichung; ideale Gase
+:::{index} single: Zustandsgleichung
 :::
 
-## Zustandsgleichung *idealer* Gase
+## Zustandsgleichung idealer und realer Gase
+
+
+:::{admonition} Zustandsgleichung idealer Gase
+{index}` <R; Gaskonstante>`
+{index}` <Gaskonstante>`
+{index}` <Zustandsgleichung; ideale Gase>`
+{index}` <Formel; Zustandsgleichung idealer Gase>`
 
 $$
 p \cdot V = n \cdot R \cdot T
 $$
 
 Molzahl $n$, {index}`Gaskonstante` $R$ (8,314J/(mol K))
-
-
-
-:::{index} Kohäsionsbinnendruck; Zustandsgleichung realer Gase
-:::
-:::{index} single: Zustandsgleichung; reales Gase
 :::
 
-## Zustandsgleichung *realer* Gase
 
-*Reale* Gase: Moleküle haben Ausdehnung, Kräfte zwischen den Molekülen:
+*Reale* Gase
+:   Moleküle haben Ausdehnung, Kräfte zwischen den Molekülen:
+
+
+:::{admonition} Zustandsgleichung *realer* Gase
+{index}` <Kohäsionsbinnendruck; Zustandsgleichung realer Gase>`
+{index}` <Zustandsgleichung; reale Gase>`
+{index}` <Formel; Zustandsgleichung realer Gase>`
+
 
 $$
 \left(p + {\frac{a}{V^2}}\right) \cdot \left(V - {\color{green}b}\right) = n \cdot R \cdot T
@@ -65,7 +71,7 @@ $$
 
 ${{\frac{a}{V^2}}}$ Kohäsionsbinnendruck,
 ${\color{green}b}$ Eigenvolumen der Gasmoleküle
-
+:::
 
 
 
@@ -74,6 +80,26 @@ ${\color{green}b}$ Eigenvolumen der Gasmoleküle
 :::
 
 ## Dampfdruck
+
+### Partialdruck, Dalton-Gesetz
+
+Partialdruck bezeichnet den Beitrag eines Gases in einem Gasgemisch zum Gesamtdruck.
+Der Gesamtdruck setzt sich demnach aus den Partialdrücken der einzelnen Gaskomponenten zusammen.
+
+Dalton-Gesetz
+:   Die Summe aller Partialdrücke ist bei idealen Gasen gleich dem Gesamtdruck des Gemisches.
+
+
+:::{figure} ../../../Submodules/3134-medical-picture-collection/resized/CC-BY-SA-4.0/Dalton's_law_of_partial_pressures.001341px.\*
+
+Partialdrücke der Raumluft auf Seehöhe
+
+[© Andrew Jarvis, {term}`ℓ CC-BY-SA 4.0`]
+:::
+
+
+
+
 
 :::{index} single: Henry-Gesetz
 :::
@@ -89,9 +115,12 @@ ${\color{green}b}$ Eigenvolumen der Gasmoleküle
 
 ### Henry-Gesetz
 
-Das *Henry-Gesetz* besagt, dass der Partialdruck eines Gases über einer Flüssigkeit direkt proportional ist zur Konzentration des Gases in der Flüssigkeit. Die Proportionalität wird ausgedrückt durch die Henry-Konstante $H^{cp}$.
+Das *Henry-Gesetz* besagt, dass der Partialdruck eines Gases über einer Flüssigkeit direkt proportional ist zur Konzentration des Gases in der Flüssigkeit.
+Die Proportionalität wird ausgedrückt durch die Henry-Konstante $H^{cp}$.
+
 
 :::{admonition} Gleichung: Henry-Gesetz
+
 $$
 c = H^{cp} \cdot p
 $$
@@ -101,6 +130,7 @@ $H^{cp}$: Henry-Löslichkeitskonstante;
 $p$: Partialdruck des Gases
 
 :::
+
 
 Die dimensionslose *Henry-Löslichkeitskonstante* $H^{cc}$
 wird auch als {dfn}`Blut-Gas-Verteilungskoeffizient` *BGV* bezeichnet:
@@ -122,6 +152,7 @@ $$
 | Xenon      | 0,14 | niedrige Löslichkeit, schnelles Anfluten |
 :::
 
+
 Die Konzentration hängt laut dem Gesetz von William Henry vom  Partialdruck ab.
 
 
@@ -141,10 +172,13 @@ Bilderserie: Konzentration, Partialdruck und das Henry-Gesetz. [₢ Johannes Sch
 
 
 
-
-Mit dem relativ einfachen Henry-Gesetz lässt sich die **Dekompressionserkrankung** {index}` <Dekompressionserkrankung>` bei Tauchern erklären.
-Der Umgebungsdruck nimmt um etwa *1 bar pro 10 Meter* Wassertiefe zu. Mit zunehmendem Partialdruck löst sich mehr Stickstoff zunächst im Blut, das ihn in die Peripherie transportiert. Dort diffundiert er vorzugsweise in Kompartimente mit hohem Fettanteil. Erfolgt das Auftauchen zu schnell bzw. ohne die evtl. notwendigen Dekompressionspausen, so ist die Rückdiffusion von Stickstoff (Gewebe → Blut → Lunge →
-Wasser) zu langsam, sodass er ausperlt. Findet dies im Gewebe statt, spricht man von Bends (Gelenkschmerzen), im Lungenkreislauf von Chokes (Atemproblemen) oder bei Blasenbildung in Arterien, die Hirn- oder Rückenmark versorgen, von Staggers (neurologischen Symptomen).
+{index}` <Dekompressionserkrankung>`
+Mit dem relativ einfachen Henry-Gesetz lässt sich die **Dekompressionserkrankung** bei Tauchern erklären.
+Der Umgebungsdruck nimmt um etwa *1 bar pro 10 Meter* Wassertiefe zu.
+Mit zunehmendem Partialdruck löst sich mehr Stickstoff zunächst im Blut, das ihn in die Peripherie transportiert.
+Dort diffundiert er vorzugsweise in Kompartimente mit hohem Fettanteil.
+Erfolgt das Auftauchen zu schnell bzw. ohne die evtl. notwendigen Dekompressionspausen, so ist die *Rückdiffusion von Stickstoff* (Gewebe → Blut → Lunge → Wasser) zu langsam, sodass er *ausperlt*.
+Findet dies im Gewebe statt, spricht man von Bends (Gelenkschmerzen), im Lungenkreislauf von Chokes (Atemproblemen) oder bei Blasenbildung in Arterien, die Hirn- oder Rückenmark versorgen, von Staggers (neurologischen Symptomen).
 
 
 
@@ -165,57 +199,3 @@ Dazu nutzt er verschiedene Prinzipien, um die Verdampfung zu unterstützen und z
 In der Medizin werden Verdampfer vor allem in der **Anästhesie** eingesetzt, um flüchtige Anästhetika (z. B. Sevofluran, Isofluran, Desfluran) kontrolliert zu verdampfen und mit dem Atemgasstrom zu vermischen.
 Dadurch lässt sich die Konzentration des Narkosemittels präzise einstellen.
 
-<!--
-
-# Markdown-Vorgaben
-
-## Allgemeine Formatierung
-
-1. Es wird Myst-Markdown verwendet.
-2. Es wird colon-fencing verwendet (":::" statt "```")
-3. Jeder Satz beginnt im Markdown-Quelltext in einer neuen Zeile.
-4. Begriffe werden im ersten Satz nicht hervorgehoben, wenn sie bereits die Überschrift darstellen.
-5. Die Tab size beträgt 2 Leerzeichen.
-
-## Index-Einträge
-
-Für wichtige Termini werden Index-Einträge vor Überschriften gesetzt.
-
-Beispiel:
-
-::::
-:::{index} single: Term
-:::
-
-## Term
-Der Term wird hier erklärt.
-::::
-
-## Einheiten
-Einheiten werden mit einem schmalen geschützten Leerzeichen (Unicode 202F) abgetrennt.
-
-Beispiele:
-
-:::
-10 mm
-2 mg / kg
-120 mm Hg
-::::
-
-## Tabellen
-Tabellen werden mit der MyST-Direktive `list-table` erstellt.
-
-Beispiel:
-
-::::
-:::{list-table} Beispiel-Tabelle
-:header-rows: 1
-
-* - Begriff
-  - Formel
-  - Einheit
-* - Druck
-  - $p = \frac{F}{A}$
-  - Pa (N / m²)
-:::
- -->::::

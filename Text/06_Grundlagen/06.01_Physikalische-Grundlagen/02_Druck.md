@@ -26,7 +26,7 @@ status: sprint
 # Druck
 
 Druck ist eine fundamentale physikalische Größe, die beschreibt, wie viel Kraft auf eine bestimmte Fläche wirkt.
-Die SI-Einheit ist **Pascal** (**Pa**), 1 Pascal (Pa) ist definiert als 1 N / m².
+Die SI-Einheit ist **Pascal** (**Pa**), 1 Pascal (Pa) ist definiert als *1 N / m²*.
 
 Mathematisch wird Druck als Kraft pro Fläche beschrieben:
 
