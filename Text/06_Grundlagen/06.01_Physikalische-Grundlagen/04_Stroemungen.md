@@ -43,6 +43,7 @@ Für inkompressible Fluide gilt Kontinuität auch für den Volumenstrom.
 
 
 :::{figure} ../../../Submodules/3134-medical-picture-collection/resized/CC-BY-SA-3.0/FlowRate_gv52.001341px.png
+:width: 50%
 
 Quelle: Wikipedia/Guy vandegrift, Lizenz: Creative Commons Attribution-Share Alike 3.0 Unported
 :::
@@ -71,6 +72,7 @@ $$
 :::
 
 :::{figure} ../../../Submodules/3134-medical-picture-collection/resized/Gabriel-Sebastian/Sketches/Sketch-000002.001341px.png
+:width: 50%
 :::
 
 Konsequenzen:
@@ -142,6 +144,7 @@ Konsequenzen:
 
 
 :::{figure} ../../../Submodules/3134-medical-picture-collection/resized/Gabriel-Sebastian/Sketches/Sketch-000001.001341px.png
+:width: 50%
 :::
 
 (Venturi-Effekt)=
