@@ -41,6 +41,24 @@ Geschlossene Kreissysteme
 
 
 
+:::{subfigure} AB
+:subcaptions: below
+:name: Name
+:class-grid: outline
+:gap: 20px
+
+Narkosemaschinen
+
+![GE™ Aisys](../../../Submodules/3134-medical-picture-collection/resized/Gabriel-Sebastian/Anaesthesia/ADU/GE-Aisys/IMG_130639.000800px.jpg)
+
+![Dräger™ Primus](../../../Submodules/3134-medical-picture-collection/resized/Gabriel-Sebastian/Anaesthesia/ADU/Draeger-Primus/IMG_145732.000800px.jpg)
+
+:::
+
+
+
+
+
 
 ## Funktionskomponenten
 
@@ -152,6 +170,26 @@ Wann Atemkalk wechseln?
 
 
 
+:::{subfigure} AA|BC
+:subcaptions: below
+:name: BS-Atemkalk
+:class-grid: outline
+:gap: 20px
+
+Atemkalk
+
+![Tausch einer Atemkalk-Einheit](../../../Submodules/3134-medical-picture-collection/resized/Gabriel-Sebastian/Anaesthesia/ADU/GE-Aisys/IMG_161743.000800px.jpg)
+
+![Erschöpfter Atemkalk](../../../Submodules/3134-medical-picture-collection/resized/Gabriel-Sebastian/Anaesthesia/ADU/GE-Aisys/IMG_162137.000800px.jpg)
+
+![Frischer Atemkalk in Pillenform](../../../Submodules/3134-medical-picture-collection/resized/Gabriel-Sebastian/Anaesthesia/ADU/GE-Aisys/IMG_20140402_161805.000800px.jpg)
+
+:::
+
+
+
+
+
 
 :::{index} single: NIST-Anschluss
 :::
@@ -243,6 +281,18 @@ Geräteseitig
 
 Frischgasentkopplung
 :   Frischgas wird während der Inspiration in Reservoir gespeichert und erst in der Exspirationsphase in das System eingeleitet → Frischgas besser ausgenutzt, wird nicht während Exspiration verworfen
+
+
+
+:::{figure} ../../../Submodules/3134-medical-picture-collection/resized/Gabriel-Sebastian/Anaesthesia/ADU/GE-Aespire/IMG_161636.001341px.jpg
+
+Narkosemaschine mit pneumatischer Frischgasdosierung und Rotameter
+:::
+
+
+
+
+
 
 
 
@@ -355,3 +405,36 @@ Nachfüllen eines GE-Sevofluran-Vapors.
 -   Inspiratorische O₂-Konzentrationsmessung (oberer und unterer Grenzwertalarm)
 -   Kapnographie
 -   Konzentrationsmessung volatiler Anästhetika (oberer und unterer Grenzwertalarm)
+
+
+
+
+
+
+
+
+
+:::{subfigure} AB|CD
+:subcaptions: below
+:name: BS-Narkosemaschine-Bestandteile
+:class-grid: outline
+:gap: 20px
+
+Bestandteile einer Narkosemaschine
+
+![O₂-Notdosierung](../../../Submodules/3134-medical-picture-collection/resized/Gabriel-Sebastian/Anaesthesia/ADU/IMG_144935.000800px.jpg)
+
+![Nebenstrommessung](../../../Submodules/3134-medical-picture-collection/resized/Gabriel-Sebastian/Anaesthesia/ADU/IMG_144945.000800px.jpg)
+
+![Wandanschlüsse](../../../Submodules/3134-medical-picture-collection/resized/Gabriel-Sebastian/Anaesthesia/ADU/IMG_161923.000800px.jpg)
+
+
+![Sevofluran-Vapor](../../../Submodules/3134-medical-picture-collection/resized/Gabriel-Sebastian/Anaesthesia/ADU/Draeger-Primus/IMG_190616.000800px.jpg)
+
+:::
+
+
+
+
+
+
