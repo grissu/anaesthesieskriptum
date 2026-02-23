@@ -144,7 +144,7 @@ html[data-theme=light]{
   --pst-color-on-background:    var(--Solarized-Base3);
   --pst-color-surface:          var(--Solarized-BG-light-contrast); /* BG Code */
   --pst-color-on-surface:       #e1e1e1;
-  --pst-color-link:             var(--Solarized-Orange);
+  --pst-color-link:             var(--Solarized-Blue);
   --pst-color-link-hover:       var(--pst-color-warning);
 
   --bd-sidebar-primary-background-color:#ffffff;
@@ -155,7 +155,7 @@ html[data-theme=light]{
   --sd-color-primary:           var(--pst-color-primary);
   --sd-color-primary-text:      var(--pst-color-primary-text);
   --sd-color-primary-highlight: var(--pst-color-primary-highlight);
-  --pst-color-secondary:        #ee9040;
+  --pst-color-secondary:        var(--Solarized-Blue);
   --pst-color-secondary-text:   #fff;
   --pst-color-secondary-highlight:#cf6912;
   --sd-color-secondary:         var(--pst-color-secondary);
@@ -236,6 +236,16 @@ html[data-theme=light]{
   .bd-article-container h1, .bd-article-container h2, .bd-article-container h3, .bd-article-container h4, .bd-article-container h5, .bd-article-container p.caption {
     color: #ffffff;
   }
+
+  b, strong {
+    color: var(--Solarized-Orange);
+    font-weight: 500;
+  }
+
+  em {
+    color: var(--Solarized-Orange);
+    font-weight: 400;
+}
 }
 
 /*
