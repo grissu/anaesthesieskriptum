@@ -398,7 +398,7 @@ md_prolog = """
 # HTML settings
 ########################################################################
 
-announcement                = "&#128679; <strong><font color=\"FFFFFF\" style=\"background-color:#dc322f;padding:5px\">ACHTUNG!</font></strong> Dies ist eine <strong><font color=\"FFFFFF\" style=\"background-color:#dc322f;padding:5px\"> VORABVERSION</font></strong> (v" + version + ") &#9888;"
+announcement                = "&#128679; <strong><font color=\"FFFFFF\">ACHTUNG!</font></strong> Dies ist eine <strong><font color=\"FFFFFF\" style=\"background-color:#dc322f;padding:5px\"> VORABVERSION</font></strong> (v" + version + ") &#9888;"
 html_title                  = u"Sebastian Gabriel"
 html_short_title            = u'Sebastian Gabriel'
 html_logo                   = './Bilder/Logos/AINS-KrAS_v006-solarized.svg'
