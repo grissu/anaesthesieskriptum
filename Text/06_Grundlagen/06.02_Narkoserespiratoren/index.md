@@ -153,7 +153,7 @@ Na₂CO₃ + Ca(OH)₂ ⇌ CaC=3 + 2 NaOH
 :::
 
 :::{important}
--   Wassergehalt (5%) muss erhalten bleiben
+-   Wassergehalt (5 %) muss erhalten bleiben
 -   Ablaufdatum wegen Austrocknung beachten!
 -   Keine Trocknung, Sterilisation oder Desinfektion
 -   Problem bei Kindern:
@@ -259,12 +259,12 @@ Geräteseitig
     Rotameter müssen im Betrieb rotieren, nur dann stimmt die Skalierung mit dem Durchfluss überein.
 
     -   ORC-Funktion (Oxygen Ratio Controller):
-        Der Fließdruck nach dem O₂-Regelventil regelt den Lachgasfluss derart, dass mindestens 25% O₂-Konzentration im Frischgas ins Kreissystem gelangen (Proportionalventil)
+        Der Fließdruck nach dem O₂-Regelventil regelt den Lachgasfluss derart, dass mindestens 25 % O₂-Konzentration im Frischgas ins Kreissystem gelangen (Proportionalventil)
 2.  Elektronisch
     -   ORC-Funktion (Oxygen Ratio Controller) in Gasmischungen mit Lachgas
-    -   Einfache Einstellung des Frischgasflows bei Beibehaltung der voreingestellten O₂-Konzentration von 25% bis zu einem Frischgasflow von 1 L / min.
+    -   Einfache Einstellung des Frischgasflows bei Beibehaltung der voreingestellten O₂-Konzentration von 25 % bis zu einem Frischgasflow von 1 L / min.
         Wird der Frischgasflow weiter reduziert ist ein Mindestfluss von 250 mL / min O₂ garantiert.
-        Ab 250 mL / min beträgt die O₂-Konzentration 100%.
+        Ab 250 mL / min beträgt die O₂-Konzentration 100 %.
         Der minimale Frischgasflow beträgt 200 mL / min.
 
     -   Manuelle O₂-Notdosierung, vorbereitet für inspiratorische O₂-Regelung, automatische Flowsteuerung
@@ -352,15 +352,15 @@ $$
 :::{list-table} Sättigungskonzentrationen bei 20°C
 
 *   -   Halothane
-    -   32%
+    -   32 %
 *   -   Enflurane
-    -   23%
+    -   23 %
 *   -   Isoflurane
-    -   30%
+    -   30 %
 *   -   Sevoflurane
-    -   21%
+    -   21 %
 *   -   Desflurane
-    -   **87%**
+    -   **87 %**
 :::
 
 
@@ -378,7 +378,7 @@ Nachfüllen eines GE-Sevofluran-Vapors.
 
 ### Desflurane-Verdampfer
 
-100% Desflurane-Dampf wird dem Frischgas zudosiert.
+100 % Desflurane-Dampf wird dem Frischgas zudosiert.
 
 
 
