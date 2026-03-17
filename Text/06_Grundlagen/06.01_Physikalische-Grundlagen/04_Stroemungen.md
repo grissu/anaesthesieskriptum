@@ -42,7 +42,7 @@ Dies bedeutet, dass der Massenstrom eines Fluids (Flüssigkeit oder Gas) in eine
 Für inkompressible Fluide gilt Kontinuität auch für den Volumenstrom.
 
 
-:::{figure} ../../../Submodules/3134-medical-picture-collection/resized/CC-BY-SA-3.0/FlowRate_gv52.001341px.png
+:::{figure} ../../../Submodules/3134-medical-picture-collection/CC-BY-SA-3.0/FlowRate_gv52.001341px.png
 :width: 50%
 
 Quelle: Wikipedia/Guy vandegrift, Lizenz: Creative Commons Attribution-Share Alike 3.0 Unported
@@ -71,7 +71,7 @@ A_1 ⋅ v_1 = A_2 ⋅ v_2
 $$
 :::
 
-:::{figure} ../../../Submodules/3134-medical-picture-collection/resized/Gabriel-Sebastian/Sketches/Sketch-000002.001341px.png
+:::{figure} ../../../Submodules/3134-medical-picture-collection/Gabriel-Sebastian/Sketches/Sketch-000002.001341px.png
 :width: 50%
 :::
 
@@ -120,7 +120,7 @@ Konsequenzen:
 -   Erhöht sich die Geschwindigkeit ($v$), sinkt der statische Druck ($p$).
 -   Druck, Geschwindigkeit und Höhe sind miteinander gekoppelt.
 
-:::{figure} ../../../Submodules/3134-medical-picture-collection/resized/Gabriel-Sebastian/Sketches/Sketch-000003.001341px.png
+:::{figure} ../../../Submodules/3134-medical-picture-collection/Gabriel-Sebastian/Sketches/Sketch-000003.001341px.png
 :::
 
 
@@ -143,7 +143,7 @@ Konsequenzen:
 
 
 
-:::{figure} ../../../Submodules/3134-medical-picture-collection/resized/Gabriel-Sebastian/Sketches/Sketch-000001.001341px.png
+:::{figure} ../../../Submodules/3134-medical-picture-collection/Gabriel-Sebastian/Sketches/Sketch-000001.001341px.png
 :width: 50%
 :::
 

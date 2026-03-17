@@ -49,9 +49,9 @@ Geschlossene Kreissysteme
 
 Narkosemaschinen
 
-![GE™ Aisys](../../../Submodules/3134-medical-picture-collection/resized/Gabriel-Sebastian/Anaesthesia/ADU/GE-Aisys/IMG_130639.000800px.jpg)
+![GE™ Aisys](../../../Submodules/3134-medical-picture-collection/Gabriel-Sebastian/Anaesthesia/ADU/GE-Aisys/IMG_130639.000800px.jpg)
 
-![Dräger™ Primus](../../../Submodules/3134-medical-picture-collection/resized/Gabriel-Sebastian/Anaesthesia/ADU/Draeger-Primus/IMG_145732.000800px.jpg)
+![Dräger™ Primus](../../../Submodules/3134-medical-picture-collection/Gabriel-Sebastian/Anaesthesia/ADU/Draeger-Primus/IMG_145732.000800px.jpg)
 
 :::
 
@@ -178,11 +178,11 @@ Wann Atemkalk wechseln?
 
 Atemkalk
 
-![Tausch einer Atemkalk-Einheit](../../../Submodules/3134-medical-picture-collection/resized/Gabriel-Sebastian/Anaesthesia/ADU/GE-Aisys/IMG_161743.000800px.jpg)
+![Tausch einer Atemkalk-Einheit](../../../Submodules/3134-medical-picture-collection/Gabriel-Sebastian/Anaesthesia/ADU/GE-Aisys/IMG_161743.000800px.jpg)
 
-![Erschöpfter Atemkalk](../../../Submodules/3134-medical-picture-collection/resized/Gabriel-Sebastian/Anaesthesia/ADU/GE-Aisys/IMG_162137.000800px.jpg)
+![Erschöpfter Atemkalk](../../../Submodules/3134-medical-picture-collection/Gabriel-Sebastian/Anaesthesia/ADU/GE-Aisys/IMG_162137.000800px.jpg)
 
-![Frischer Atemkalk in Pillenform](../../../Submodules/3134-medical-picture-collection/resized/Gabriel-Sebastian/Anaesthesia/ADU/GE-Aisys/IMG_20140402_161805.000800px.jpg)
+![Frischer Atemkalk in Pillenform](../../../Submodules/3134-medical-picture-collection/Gabriel-Sebastian/Anaesthesia/ADU/GE-Aisys/IMG_20140402_161805.000800px.jpg)
 
 :::
 
@@ -284,7 +284,7 @@ Frischgasentkopplung
 
 
 
-:::{figure} ../../../Submodules/3134-medical-picture-collection/resized/Gabriel-Sebastian/Anaesthesia/ADU/GE-Aespire/IMG_161636.001341px.jpg
+:::{figure} ../../../Submodules/3134-medical-picture-collection/Gabriel-Sebastian/Anaesthesia/ADU/GE-Aespire/IMG_161636.001341px.jpg
 
 Narkosemaschine mit pneumatischer Frischgasdosierung und Rotameter
 :::
@@ -364,7 +364,7 @@ $$
 :::
 
 
-:::{figure} ../../../Submodules/3134-medical-picture-collection/resized/Gabriel-Sebastian/Anaesthesia/ADU/IMG_124348.001341px.\*
+:::{figure} ../../../Submodules/3134-medical-picture-collection/Gabriel-Sebastian/Anaesthesia/ADU/IMG_124348.001341px.\*
 
 Nachfüllen eines GE-Sevofluran-Vapors.
 :::
@@ -422,14 +422,14 @@ Nachfüllen eines GE-Sevofluran-Vapors.
 
 Bestandteile einer Narkosemaschine
 
-![O₂-Notdosierung](../../../Submodules/3134-medical-picture-collection/resized/Gabriel-Sebastian/Anaesthesia/ADU/IMG_144935.000800px.jpg)
+![O₂-Notdosierung](../../../Submodules/3134-medical-picture-collection/Gabriel-Sebastian/Anaesthesia/ADU/IMG_144935.000800px.jpg)
 
-![Nebenstrommessung](../../../Submodules/3134-medical-picture-collection/resized/Gabriel-Sebastian/Anaesthesia/ADU/IMG_144945.000800px.jpg)
+![Nebenstrommessung](../../../Submodules/3134-medical-picture-collection/Gabriel-Sebastian/Anaesthesia/ADU/IMG_144945.000800px.jpg)
 
-![Wandanschlüsse](../../../Submodules/3134-medical-picture-collection/resized/Gabriel-Sebastian/Anaesthesia/ADU/IMG_161923.000800px.jpg)
+![Wandanschlüsse](../../../Submodules/3134-medical-picture-collection/Gabriel-Sebastian/Anaesthesia/ADU/IMG_161923.000800px.jpg)
 
 
-![Sevofluran-Vapor](../../../Submodules/3134-medical-picture-collection/resized/Gabriel-Sebastian/Anaesthesia/ADU/Draeger-Primus/IMG_190616.000800px.jpg)
+![Sevofluran-Vapor](../../../Submodules/3134-medical-picture-collection/Gabriel-Sebastian/Anaesthesia/ADU/Draeger-Primus/IMG_190616.000800px.jpg)
 
 :::
 

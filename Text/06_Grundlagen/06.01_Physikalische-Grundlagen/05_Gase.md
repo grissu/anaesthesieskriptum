@@ -90,7 +90,7 @@ Dalton-Gesetz
 :   Die Summe aller Partialdrücke ist bei idealen Gasen gleich dem Gesamtdruck des Gemisches.
 
 
-:::{figure} ../../../Submodules/3134-medical-picture-collection/resized/CC-BY-SA-4.0/Dalton's_law_of_partial_pressures.001341px.\*
+:::{figure} ../../../Submodules/3134-medical-picture-collection/CC-BY-SA-4.0/Dalton's_law_of_partial_pressures.001341px.\*
 
 Partialdrücke der Raumluft auf Seehöhe
 
@@ -164,9 +164,9 @@ Die Konzentration hängt laut dem Gesetz von William Henry vom  Partialdruck ab.
 
 Bilderserie: Konzentration, Partialdruck und das Henry-Gesetz. [₢ Johannes Schneider, {term}`ℓ CC BY-SA 4.0`]
 
-![Die Konzentration an Teilchen in der flüssigen Phase (hier blau dargestellt) hängt vom Partialdruck ab.](../../../Submodules/3134-medical-picture-collection/resized/CC-BY-SA-4.0/Konzentrationsabhaengigkeit_vom_Partialdruck_1.001341px.\*)
+![Die Konzentration an Teilchen in der flüssigen Phase (hier blau dargestellt) hängt vom Partialdruck ab.](../../../Submodules/3134-medical-picture-collection/CC-BY-SA-4.0/Konzentrationsabhaengigkeit_vom_Partialdruck_1.001341px.\*)
 
-![Eine Erhöhung des Außendrucks (hier durch Einpressen eines Kolbens dargestellt) führt zu einem höheren Partialdruck der Gasphase und folglich zu einer höheren Konzentration.](../../../Submodules/3134-medical-picture-collection/resized/CC-BY-SA-4.0/Konzentrationsabhaengigkeit_vom_Partialdruck_2.001341px.\*)
+![Eine Erhöhung des Außendrucks (hier durch Einpressen eines Kolbens dargestellt) führt zu einem höheren Partialdruck der Gasphase und folglich zu einer höheren Konzentration.](../../../Submodules/3134-medical-picture-collection/CC-BY-SA-4.0/Konzentrationsabhaengigkeit_vom_Partialdruck_2.001341px.\*)
 
 :::
 
