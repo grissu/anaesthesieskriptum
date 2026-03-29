@@ -719,5 +719,5 @@ latex_documents                   = [
 
 
 intersphinx_mapping = {
-    'ccca': ('https://kompendium.criticalcare.at', 'objects_CCCA-Kompendium.inv')
+    'ccca': ('https://kompendium.criticalcare.at', 'https://kompendium.criticalcare.at/objects.inv')
     }
