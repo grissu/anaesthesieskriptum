@@ -182,7 +182,7 @@ Atemkalk
 
 ![Erschöpfter Atemkalk](../../../Submodules/3134-medical-picture-collection/Gabriel-Sebastian/Anaesthesia/ADU/GE-Aisys/IMG_162137.000800px.jpg)
 
-![Frischer Atemkalk in Pillenform](../../../Submodules/3134-medical-picture-collection/Gabriel-Sebastian/Anaesthesia/ADU/GE-Aisys/IMG_20140402_161805.000800px.jpg)
+![Frischer Atemkalk in Pillenform](../../../Submodules/3134-medical-picture-collection/Gabriel-Sebastian/Anaesthesia/ADU/GE-Aisys/IMG_161805.000800px.jpg)
 
 :::
 
