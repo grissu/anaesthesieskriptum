@@ -104,7 +104,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Build
-        run: make clean html
+        run: make clean html pdf print
 
       - name: Debug output
         run: |
@@ -115,7 +115,15 @@ jobs:
         run: |
           mkdir -p artifacts
           cp -r Export/master/html artifacts/html
+
           mkdir -p artifacts/pdf
+
+          if ls Export/master/latex/*.pdf >/dev/null 2>&1; then
+            cp Export/master/latex/*.pdf artifacts/pdf/
+            cp Export/master/latex/*.pdf Export/master/html/
+          else
+            echo "No PDF files found"
+          fi
 
       - name: Deploy HTML via rsync to playground
         env:
