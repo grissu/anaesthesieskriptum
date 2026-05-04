@@ -404,8 +404,8 @@ html_short_title            = u'Sebastian Gabriel'
 html_logo                   = './Bilder/Logos/AINS-KrAS_v006-solarized.svg'
 html_favicon                = './Bilder/Logos/AINS-KrAS_v006-solarized.svg'
 html_show_sourcelink        = True
-html_theme_path             = ["../System/themes", ]
-html_static_path            = ['../System/static']
+html_theme_path             = ["../Submodules/hex15-sphinx-css/themes", ]
+html_static_path            = ['../Submodules/hex15-sphinx-css/static']
 html_theme                  = "sphinx_book_theme"
 html_css_files              = [
                                 "pst-definitions.css",
