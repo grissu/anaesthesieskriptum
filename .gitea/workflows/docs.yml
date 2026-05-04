@@ -1,0 +1,132 @@
+name: Build Docs
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    container:
+      image: engerth.space/gase/sphinx-ci:latest
+
+    steps:
+      - name: Checkout repository
+        env:
+          CI_REPO_TOKEN: ${{ secrets.CI_REPO_TOKEN }}
+        run: |
+          cat > ~/.netrc <<EOF
+          machine engerth.space
+          login gase
+          password ${CI_REPO_TOKEN}
+          EOF
+
+          chmod 600 ~/.netrc
+
+          git clone --branch master "https://engerth.space/lab/${GITHUB_REPOSITORY}.git" .
+
+          rm -f ~/.netrc
+
+      - name: Prepare large submodule cache
+        env:
+          CI_REPO_TOKEN: ${{ secrets.CI_REPO_TOKEN }}
+        run: |
+          cat > ~/.netrc <<EOF
+          machine engerth.space
+          login gase
+          password ${CI_REPO_TOKEN}
+          EOF
+
+          chmod 600 ~/.netrc
+
+          mkdir -p /cache/submodules
+
+          if [ ! -d /cache/submodules/3134-medical-picture-collection/.git ]; then
+            git clone \
+              "https://engerth.space/lab/3134/3134-medical-picture-collection.git" \
+              /cache/submodules/3134-medical-picture-collection
+          else
+            cd /cache/submodules/3134-medical-picture-collection
+            git fetch --all --prune
+            git checkout master
+            git pull --ff-only
+          fi
+
+          rm -f ~/.netrc
+
+      - name: Restore large submodule from cache
+        run: |
+          mkdir -p Submodules
+          rsync -a --delete \
+            /cache/submodules/3134-medical-picture-collection/ \
+            Submodules/3134-medical-picture-collection/
+
+      - name: Update remaining submodules
+        env:
+          CI_REPO_TOKEN: ${{ secrets.CI_REPO_TOKEN }}
+        run: |
+          cat > ~/.netrc <<EOF
+          machine engerth.space
+          login gase
+          password ${CI_REPO_TOKEN}
+          EOF
+
+          chmod 600 ~/.netrc
+
+          git config --global url."https://engerth.space/lab/".insteadOf "gitea@lab.engerth.space:"
+          git submodule sync --recursive
+
+          git submodule update --init --recursive \
+            Submodules/3134-cspell-dictionaries \
+            Submodules/hex15-sphinx-css \
+            Submodules/hex15-sphinx-margin \
+            Submodules/hex15-sphinx-frontmatter-filter \
+            Submodules/hex15-sphinx-frontmatter-expose \
+            Submodules/hex15-sphinx-extensions-contrib \
+            Submodules/hex15-sphinx-changeset \
+            Submodules/hex15-latex-styles
+
+          rm -f ~/.netrc
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Build
+        run: make clean html singlehtml
+
+      - name: Debug output
+        run: |
+          pwd
+          find Export -maxdepth 4 -type f | sort
+
+      - name: DOCX
+        run: |
+          mkdir -p Export/master/docx
+          pandoc Export/master/singlehtml/index.html \
+            -o Export/master/docx/documentation.docx \
+            --resource-path=Export/master/singlehtml
+
+      - name: Collect artifacts
+        run: |
+          mkdir -p artifacts
+          cp -r Export/master/html artifacts/html
+          cp -r Export/master/singlehtml artifacts/singlehtml
+          cp Export/master/docx/documentation.docx artifacts/documentation.docx
+          cp Export/master/docx/documentation.docx Export/master/html/Hygienemanual.docx
+          mkdir -p artifacts/pdf
+
+      - name: Deploy HTML via rsync to playground
+        env:
+          CI_DEPLOY_KEY: ${{ secrets.CI_DEPLOY_KEY }}
+        run: |
+          mkdir -p ~/.ssh
+          echo "$CI_DEPLOY_KEY" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+
+          ssh-keyscan srv002.3134.at >> ~/.ssh/known_hosts
+
+          rsync -av --delete \
+            Export/master/html/ \
+            artifacts-upload@srv002.3134.at:/srv/web/CCCA/Playground/Anaesthesieskriptum
