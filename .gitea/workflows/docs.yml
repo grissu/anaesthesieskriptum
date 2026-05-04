@@ -15,12 +15,6 @@ jobs:
         - /home/gitea-runner/cache:/cache
 
     steps:
-      - name: Debug cache mount
-        run: |
-          df -h /cache
-          touch /cache/test-from-job
-          ls -la /cache
-
       - name: Checkout repository
         env:
           CI_REPO_TOKEN: ${{ secrets.CI_REPO_TOKEN }}
@@ -37,7 +31,7 @@ jobs:
 
           rm -f ~/.netrc
 
-      - name: Prepare large submodule cache
+      - name: Prepare large submodule git cache
         env:
           CI_REPO_TOKEN: ${{ secrets.CI_REPO_TOKEN }}
         run: |
@@ -49,37 +43,38 @@ jobs:
 
           chmod 600 ~/.netrc
 
-          mkdir -p /cache/submodules
+          mkdir -p /cache/git
 
-          if [ ! -d /cache/submodules/3134-medical-picture-collection/.git ]; then
-            git clone \
+          if [ ! -d /cache/git/3134-medical-picture-collection.git ]; then
+            git clone --mirror \
               "https://engerth.space/lab/3134/3134-medical-picture-collection.git" \
-              /cache/submodules/3134-medical-picture-collection
+              /cache/git/3134-medical-picture-collection.git
           else
-            cd /cache/submodules/3134-medical-picture-collection
-            git fetch --all --prune
-            git checkout master
-            git pull --ff-only
+            git -C /cache/git/3134-medical-picture-collection.git fetch --prune
           fi
 
           rm -f ~/.netrc
 
-      - name: Debug disk usage
+      - name: Update large submodule using cache
+        env:
+          CI_REPO_TOKEN: ${{ secrets.CI_REPO_TOKEN }}
         run: |
-          df -h
-          df -h .
-          df -h /workspace || true
-          df -h /cache || true
-          du -sh /cache/submodules/3134-medical-picture-collection || true
+          cat > ~/.netrc <<EOF
+          machine engerth.space
+          login gase
+          password ${CI_REPO_TOKEN}
+          EOF
 
-      - name: Restore large submodule from cache
-        run: |
-          mkdir -p Submodules
-          rm -rf Submodules/3134-medical-picture-collection
+          chmod 600 ~/.netrc
 
-          cp -al \
-            /cache/submodules/3134-medical-picture-collection \
+          git config --global url."https://engerth.space/lab/".insteadOf "gitea@lab.engerth.space:"
+          git submodule sync --recursive
+
+          git submodule update --init \
+            --reference /cache/git/3134-medical-picture-collection.git \
             Submodules/3134-medical-picture-collection
+
+          rm -f ~/.netrc
 
       - name: Update remaining submodules
         env:
