@@ -106,9 +106,13 @@ jobs:
       - name: Install project fonts into container
         run: |
           mkdir -p /usr/share/fonts/truetype/lexend
+          mkdir -p /usr/share/fonts/truetype/libertinus
 
           cp Submodules/hex15-sphinx-css/static/Lexend/*.ttf \
             /usr/share/fonts/truetype/lexend/
+
+          cp Submodules/hex15-sphinx-css/static/Libertinus/*.otf \
+            /usr/share/fonts/truetype/libertinus/
 
           fc-cache -f -v
           luaotfload-tool --update --force
