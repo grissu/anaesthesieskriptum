@@ -11,8 +11,16 @@ jobs:
 
     container:
       image: engerth.space/gase/sphinx-ci:latest
+      volumes:
+        - /home/gitea-runner/cache:/cache
 
     steps:
+      - name: Debug cache mount
+        run: |
+          df -h /cache
+          touch /cache/test-from-job
+          ls -la /cache
+
       - name: Checkout repository
         env:
           CI_REPO_TOKEN: ${{ secrets.CI_REPO_TOKEN }}
