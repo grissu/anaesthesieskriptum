@@ -471,6 +471,15 @@ latex_additional_files            = [
     "../Submodules/hex15-latex-styles/hex15-theme-ks-alternate.sty",
     "../Submodules/hex15-latex-styles/hex15-theme-ks.sty",
     "../Submodules/hex15-latex-styles/hex15-theme-solarized.sty",
+    "../Submodules/hex15-sphinx-css/LexendDeca-Black.ttf",
+    "../Submodules/hex15-sphinx-css/LexendDeca-Bold.ttf",
+    "../Submodules/hex15-sphinx-css/LexendDeca-ExtraBold.ttf",
+    "../Submodules/hex15-sphinx-css/LexendDeca-ExtraLight.ttf",
+    "../Submodules/hex15-sphinx-css/LexendDeca-Light.ttf",
+    "../Submodules/hex15-sphinx-css/LexendDeca-Medium.ttf",
+    "../Submodules/hex15-sphinx-css/LexendDeca-Regular.ttf",
+    "../Submodules/hex15-sphinx-css/LexendDeca-SemiBold.ttf",
+    "../Submodules/hex15-sphinx-css/LexendDeca-Thin.ttf",
     ]
 
 latex_elements                    = {
