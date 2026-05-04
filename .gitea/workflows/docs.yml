@@ -107,27 +107,17 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Build
-        run: make clean html singlehtml
+        run: make clean html
 
       - name: Debug output
         run: |
           pwd
           find Export -maxdepth 4 -type f | sort
 
-      - name: DOCX
-        run: |
-          mkdir -p Export/master/docx
-          pandoc Export/master/singlehtml/index.html \
-            -o Export/master/docx/documentation.docx \
-            --resource-path=Export/master/singlehtml
-
       - name: Collect artifacts
         run: |
           mkdir -p artifacts
           cp -r Export/master/html artifacts/html
-          cp -r Export/master/singlehtml artifacts/singlehtml
-          cp Export/master/docx/documentation.docx artifacts/documentation.docx
-          cp Export/master/docx/documentation.docx Export/master/html/Hygienemanual.docx
           mkdir -p artifacts/pdf
 
       - name: Deploy HTML via rsync to playground
