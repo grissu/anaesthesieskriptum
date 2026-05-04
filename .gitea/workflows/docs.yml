@@ -103,6 +103,20 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      - name: Install project fonts into container
+        run: |
+          mkdir -p /usr/share/fonts/truetype/lexend
+
+          cp Submodules/hex15-sphinx-css/static/Lexend/*.ttf \
+            /usr/share/fonts/truetype/lexend/
+
+          fc-cache -f -v
+          luaotfload-tool --update --force
+
+          fc-list | grep -i Lexend || true
+          luaotfload-tool --find="Lexend-SemiBold" || true
+          luaotfload-tool --find="Lexend-Light" || true
+
       - name: Build
         run: make clean html pdf print
 
