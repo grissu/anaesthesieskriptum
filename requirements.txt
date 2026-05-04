@@ -1,0 +1,15 @@
+sphinx
+sphinx-book-theme
+myst-parser
+markdown-it-py
+linkify-it-py
+sphinx_git
+GitAutoVersion
+python-frontmatter
+sphinxcontrib-actdiag
+sphinxcontrib-blockdiag
+sphinxcontrib-seqdiag
+sphinxcontrib-nwdiag
+sphinx_subfigure
+sphinx_design
+sphinx_issues
