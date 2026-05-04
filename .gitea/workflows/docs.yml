@@ -56,12 +56,20 @@ jobs:
 
           rm -f ~/.netrc
 
-      - name: Restore large submodule from cache
+      - name: Debug disk usage
+        run: |
+          df -h
+          df -h .
+          df -h /workspace || true
+          df -h /cache || true
+          du -sh /cache/submodules/3134-medical-picture-collection || true
+
+      - name: Link large submodule from cache
         run: |
           mkdir -p Submodules
-          rsync -a --delete \
-            /cache/submodules/3134-medical-picture-collection/ \
-            Submodules/3134-medical-picture-collection/
+          rm -rf Submodules/3134-medical-picture-collection
+          ln -s /cache/submodules/3134-medical-picture-collection \
+            Submodules/3134-medical-picture-collection
 
       - name: Update remaining submodules
         env:
