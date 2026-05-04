@@ -31,7 +31,7 @@ jobs:
 
           rm -f ~/.netrc
 
-      - name: Prepare large submodule git cache
+      - name: Prepare submodule git caches
         env:
           CI_REPO_TOKEN: ${{ secrets.CI_REPO_TOKEN }}
         run: |
@@ -42,20 +42,37 @@ jobs:
           EOF
 
           chmod 600 ~/.netrc
+
+          git config --global url."https://engerth.space/lab/".insteadOf "gitea@lab.engerth.space:"
+          git submodule sync --recursive
 
           mkdir -p /cache/git
 
-          if [ ! -d /cache/git/3134-medical-picture-collection.git ]; then
-            git clone --mirror \
-              "https://engerth.space/lab/3134/3134-medical-picture-collection.git" \
-              /cache/git/3134-medical-picture-collection.git
-          else
-            git -C /cache/git/3134-medical-picture-collection.git fetch --prune
-          fi
+          git config --file .gitmodules --get-regexp path | while read -r key path; do
+            name="$(basename "$path")"
+            url="$(git config --file .gitmodules --get "submodule.${path}.url" || true)"
+
+            url="$(git config --file .gitmodules --get-regexp url | awk -v p="$path" '
+              $1 == "submodule." p ".url" {print $2}
+            ')"
+
+            https_url="$(echo "$url" | sed 's#^gitea@lab\.engerth\.space:#https://engerth.space/lab/#')"
+            cache_dir="/cache/git/${name}.git"
+
+            echo "Preparing cache for $path"
+            echo "URL: $https_url"
+            echo "Cache: $cache_dir"
+
+            if [ ! -d "$cache_dir" ]; then
+              git clone --mirror "$https_url" "$cache_dir"
+            else
+              git -C "$cache_dir" fetch --prune
+            fi
+          done
 
           rm -f ~/.netrc
 
-      - name: Update large submodule using cache
+      - name: Update submodules using cache
         env:
           CI_REPO_TOKEN: ${{ secrets.CI_REPO_TOKEN }}
         run: |
@@ -70,36 +87,16 @@ jobs:
           git config --global url."https://engerth.space/lab/".insteadOf "gitea@lab.engerth.space:"
           git submodule sync --recursive
 
-          git submodule update --init \
-            --reference /cache/git/3134-medical-picture-collection.git \
-            Submodules/3134-medical-picture-collection
+          git config --file .gitmodules --get-regexp path | while read -r key path; do
+            name="$(basename "$path")"
+            cache_dir="/cache/git/${name}.git"
 
-          rm -f ~/.netrc
+            echo "Updating submodule $path using cache $cache_dir"
 
-      - name: Update remaining submodules
-        env:
-          CI_REPO_TOKEN: ${{ secrets.CI_REPO_TOKEN }}
-        run: |
-          cat > ~/.netrc <<EOF
-          machine engerth.space
-          login gase
-          password ${CI_REPO_TOKEN}
-          EOF
-
-          chmod 600 ~/.netrc
-
-          git config --global url."https://engerth.space/lab/".insteadOf "gitea@lab.engerth.space:"
-          git submodule sync --recursive
-
-          git submodule update --init --recursive \
-            Submodules/3134-cspell-dictionaries \
-            Submodules/hex15-sphinx-css \
-            Submodules/hex15-sphinx-margin \
-            Submodules/hex15-sphinx-frontmatter-filter \
-            Submodules/hex15-sphinx-frontmatter-expose \
-            Submodules/hex15-sphinx-extensions-contrib \
-            Submodules/hex15-sphinx-changeset \
-            Submodules/hex15-latex-styles
+            git submodule update --init \
+              --reference "$cache_dir" \
+              "$path"
+          done
 
           rm -f ~/.netrc
 
