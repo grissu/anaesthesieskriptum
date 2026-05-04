@@ -93,7 +93,7 @@ Die abgeführten Gase werden durch eine zentrale Absauganlage in ein sicheres En
 1.  Während der Inspiration wird Frischgas in das Reservoir geleitet, während der Exspiration wird es in das System eingeleitet.
 
 2.  Exspiratorisch:
-    Über die Gaseinlassventile werden die Gase AIRS/O₂ bzw. N2O/O₂ in den Mischtank geleitet.
+    Über die Gaseinlassventile werden die Gase AIRS/O₂ bzw. N₂O/O₂ in den Mischtank geleitet.
     Die Ventile werden zeitgesteuert nacheinander geöffnet und geschlossen.
     Flow und Druck der einströmenden Gase werden überwacht, sodass der Mischer unabhängig von Versorgungsdrücken ist.
     Der Gesamt-Frischgasflow wird mit Hilfe eines *Proportionalventils* (Flowdosierventil) gesteuert und **nur in der Exspirationsphase** in das Kreissystem geleitet.
@@ -219,6 +219,9 @@ Geräteseitig
 
 :::{todo} FOTO DIN-Anschluss
 :::
+
+
+
 
 :::{list-table} Farbcodes Gasversorgung
 :header-rows: 1
@@ -366,7 +369,7 @@ $$
 
 :::{figure} ../../../Submodules/3134-medical-picture-collection/Gabriel-Sebastian/Anaesthesia/ADU/IMG_124348.001341px.\*
 
-Nachfüllen eines GE-Sevofluran-Vapors.
+Nachfüllen eines GE™-Sevofluran-Vapors.
 :::
 
 
@@ -398,7 +401,7 @@ Nachfüllen eines GE-Sevofluran-Vapors.
 -   Anzeige des Füllstandes
 -   Befüllung während Betrieb möglich
 
-## Vorgeschriebenes Monitoring gem. EN 740
+## Vorgeschriebenes Monitoring gem. EN 740
 
 -   Atemwegsdruckmessung (Diskonnektionslarm, Stenosealarm)
 -   Exspiratorische Volumenmessung
