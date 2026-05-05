@@ -318,8 +318,8 @@ myst_substitutions          = {
     'Text-Sampler-E-Short': '🄴 — Ereignisse',
     'Text-Sampler-R-Short': '🅁 — Risikofaktoren',
     'version': version,
-    'linkpdfa4': '[Das Skriptum als PDF (beidseitiger Druck, A4)](./_static/Kremser-Anaesthesieskriptum_v' + version + '_a4.pdf)',
-    'linkpdfletter': '[Das Skriptum als PDF (Tablet)](./_static/Kremser-Anaesthesieskriptum_v' + version + '_letter.pdf)',
+    'linkpdfa4': '[Das Skriptum als PDF (beidseitiger Druck, A4)](https://anaesthesieskriptum.at/_static/Kremser-Anaesthesieskriptum_v' + version + '_a4.pdf)',
+    'linkpdfletter': '[Das Skriptum als PDF (Tablet)](https://anaesthesieskriptum.at/_static/Kremser-Anaesthesieskriptum_v' + version + '_letter.pdf)',
     'Fortschritt': r'''
 :::{margin} Fortschritt
 
