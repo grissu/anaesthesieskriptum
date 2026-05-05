@@ -21,7 +21,6 @@ Fürstenstraße 5, 5400 Hallein
 
 
 
-
 ## Hinweise zur Einreichung von Beiträgen
 
 Mit der Einreichung von Texten, Abbildungen, Tabellen oder sonstigen Materialien erklärt sich die einreichende Person damit einverstanden, dem Herausgeber die zeitlich, räumlich und inhaltlich unbeschränkten, nicht exklusiven Nutzungsrechte an den eingereichten Inhalten einzuräumen, sofern keine abweichende schriftliche Vereinbarung getroffen wurde.
