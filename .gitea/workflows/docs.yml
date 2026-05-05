@@ -1,4 +1,4 @@
-name: Build Docs 2
+name: Build html pdf and play
 
 on:
   push:
