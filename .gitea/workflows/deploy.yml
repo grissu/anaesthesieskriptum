@@ -1,0 +1,158 @@
+name: Deploy HTML PDF
+
+on:
+  push:
+    branches: [deploy]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    container:
+      image: engerth.space/gase/sphinx-ci:latest
+      volumes:
+        - /home/gitea-runner/cache:/cache
+
+    steps:
+      - name: Checkout repository
+        env:
+          CI_REPO_TOKEN: ${{ secrets.CI_REPO_TOKEN }}
+        run: |
+          cat > ~/.netrc <<EOF
+          machine engerth.space
+          login gase
+          password ${CI_REPO_TOKEN}
+          EOF
+
+          chmod 600 ~/.netrc
+
+          git clone --branch deploy "https://engerth.space/lab/${GITHUB_REPOSITORY}.git" .
+
+          rm -f ~/.netrc
+
+      - name: Prepare submodule git caches
+        env:
+          CI_REPO_TOKEN: ${{ secrets.CI_REPO_TOKEN }}
+        run: |
+          cat > ~/.netrc <<EOF
+          machine engerth.space
+          login gase
+          password ${CI_REPO_TOKEN}
+          EOF
+
+          chmod 600 ~/.netrc
+
+          git config --global url."https://engerth.space/lab/".insteadOf "gitea@lab.engerth.space:"
+          git submodule sync --recursive
+
+          mkdir -p /cache/git
+
+          git config --file .gitmodules --get-regexp path | while read -r key path; do
+            name="$(basename "$path")"
+            url="$(git config --file .gitmodules --get "submodule.${path}.url" || true)"
+
+            url="$(git config --file .gitmodules --get-regexp url | awk -v p="$path" '
+              $1 == "submodule." p ".url" {print $2}
+            ')"
+
+            https_url="$(echo "$url" | sed 's#^gitea@lab\.engerth\.space:#https://engerth.space/lab/#')"
+            cache_dir="/cache/git/${name}.git"
+
+            echo "Preparing cache for $path"
+            echo "URL: $https_url"
+            echo "Cache: $cache_dir"
+
+            if [ ! -d "$cache_dir" ]; then
+              git clone --mirror "$https_url" "$cache_dir"
+            else
+              git -C "$cache_dir" fetch --prune
+            fi
+          done
+
+          rm -f ~/.netrc
+
+      - name: Update submodules using cache
+        env:
+          CI_REPO_TOKEN: ${{ secrets.CI_REPO_TOKEN }}
+        run: |
+          cat > ~/.netrc <<EOF
+          machine engerth.space
+          login gase
+          password ${CI_REPO_TOKEN}
+          EOF
+
+          chmod 600 ~/.netrc
+
+          git config --global url."https://engerth.space/lab/".insteadOf "gitea@lab.engerth.space:"
+          git submodule sync --recursive
+
+          git config --file .gitmodules --get-regexp path | while read -r key path; do
+            name="$(basename "$path")"
+            cache_dir="/cache/git/${name}.git"
+
+            echo "Updating submodule $path using cache $cache_dir"
+
+            git submodule update --init \
+              --reference "$cache_dir" \
+              "$path"
+          done
+
+          rm -f ~/.netrc
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Install project fonts into container
+        run: |
+          mkdir -p /usr/share/fonts/truetype/lexend
+          mkdir -p /usr/share/fonts/truetype/libertinus
+
+          cp Submodules/hex15-sphinx-css/static/Lexend/*.ttf \
+            /usr/share/fonts/truetype/lexend/
+
+          cp Submodules/hex15-sphinx-css/static/Libertinus/*.otf \
+            /usr/share/fonts/truetype/libertinus/
+
+          fc-cache -f -v
+          luaotfload-tool --update --force
+
+          fc-list | grep -i Lexend || true
+          luaotfload-tool --find="Lexend-SemiBold" || true
+          luaotfload-tool --find="Lexend-Light" || true
+
+      - name: Build
+        run: make clean html pdf print
+
+      - name: Debug output
+        run: |
+          pwd
+          find Export -maxdepth 4 -type f | sort
+
+      - name: Collect artifacts
+        run: |
+          mkdir -p artifacts
+          cp -r Export/deploy/html artifacts/html
+
+          mkdir -p artifacts/pdf
+
+          if ls Export/deploy/latex/*.pdf >/dev/null 2>&1; then
+            cp Export/deploy/latex/*.pdf artifacts/pdf/
+            cp Export/deploy/latex/*.pdf Export/deploy/html/
+          else
+            echo "No PDF files found"
+          fi
+
+      - name: Deploy HTML, PDF via rsync to production
+        env:
+          CI_DEPLOY_KEY: ${{ secrets.CI_DEPLOY_KEY }}
+        run: |
+          mkdir -p ~/.ssh
+          echo "$CI_DEPLOY_KEY" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+
+          ssh-keyscan srv002.3134.at >> ~/.ssh/known_hosts
+
+          rsync -av --delete \
+            Export/deploy/html/ \
+            artifacts-upload@srv002.3134.at:/srv/web/CCCA/Anaesthesieskriptum-test-deploy
