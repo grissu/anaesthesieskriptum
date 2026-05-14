@@ -1,10 +1,15 @@
 # Kremser Anästhesieskriptum -- KrAS
 
-vormals: "Anästhesie kompakt" von Anita Aust\
-Übernommen von Sebastian Gabriel
+vormals: "Anästhesie kompakt" von Anita Aust, übernommen von Sebastian Gabriel
+
+
+>   [!IMPORTANT]
+>   Das Repository ist *umgezogen* auf **Codeberg**:
+>
+>   -   https://codeberg.org/gase/anaesthesieskriptum
+
 
 Homepage: https://anaesthesieskriptum.at
-
 
 ![](Text/Bilder/gen/Facharztdiplom-Aufstieg-1-quer.001341px.jpeg)
 

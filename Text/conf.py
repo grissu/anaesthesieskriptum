@@ -257,7 +257,16 @@ myst_enable_extensions      = [
 
 # sd_fontawesome_latex        = True
 
-issues_github_path = "CriticalCareClub/Kompendium-alpha"
+issues_github_path          = "gase/anaesthesieskriptum"
+# which is the equivalent to:
+issues_uri                  = "https://codeberg.org/gase/anaesthesieskriptum/issues/{issue}"
+issues_prefix               = "#"
+issues_pr_uri               = "https://codeberg.org/gase/anaesthesieskriptum/pull/{pr}"
+issues_pr_prefix            = "#"
+issues_commit_uri           = "https://codeberg.org/gase/anaesthesieskriptum/commit/{commit}"
+issues_commit_prefix        = "@"
+issues_user_uri             = "https://codeberg.org/{user}"
+issues_user_prefix          = "@"
 
 imgmath_latex               = "dvilualatex"
 imgmath_image_format        = "svg"
@@ -348,9 +357,9 @@ Dieser Abschnitt ist in Arbeit!
 
 Das Melden von Fehlern oder Einsendung von Beiträgen kann über
 -   unsere E-Mail-Adresse input@anaesthesieskriptum.at geschehen, oder über
--   das Ticketsystem auf unserem [Github™-Repository](https://github.com/grissu/anaesthesieskriptum/issues) (Github™-Konto erforderlich).
+-   das Ticketsystem auf unserem [Codeberg™-Repository](https://codeberg.org/gase/anaesthesieskriptum/issues) (Codeberg™-Konto erforderlich).
 
-    Von der Webseite kann man auch mittels des Github™-Symbols in der rechten oberen Ecke direkt ein Ticket erstellen:
+    Von der Webseite kann man auch mittels des Codeberg™-Symbols in der rechten oberen Ecke direkt ein Ticket erstellen:
 
     ![alt text](/Bilder/Screenshot_open-issue-Detail.png)
 
@@ -418,7 +427,7 @@ html_theme_options          = {
     "toc_title"             : u"Auf dieser Seite ...",
 #    "use_sidenotes": True,
     "repository_provider"   : 'github',
-    "repository_url"        : 'https://github.com/grissu/anaesthesieskriptum',
+    "repository_url"        : 'https://codeberg.org/gase/anaesthesieskriptum',
     "repository_branch"     : u"master",
     "use_repository_button" : True,
     "use_download_button"   : False,
